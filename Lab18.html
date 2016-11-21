@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab18</title>
+<link href="Honeycomb.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+<style>
+<style>
+a:link {
+    color: #fff;
+}
+a:visited {
+    color: #fff;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+	text-decoration: !important;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content {
+	font-family: 'Raleway', sans-serif;
+	color: #FFFFFF;
+	font-size: 30px;
+	background-image: url(file:///C|/Users/thumb/Desktop/Lab18/images/Girls-working-on-electronics-smaller2.png)
+}
+</style>
+</head>
+<body>
+<ul id="hexGrid">
+  <li class="hex">
+    <a class="hexIn" href="http://time.com/104210/maker-faire-maker-movement/" target="_blank">
+      <img src="http://i2.wp.com/www.thumble.org/wp-content/uploads/2016/10/m3d-printer-1.png" alt="" />
+      <h1>Make Something Do Something</h1>
+      <p>The importance of the maker movement, STEM, and problem-based learning.</p>
+    </a>
+  </li>
+  <li class="hex">
+    <a class="hexIn" href="#">
+      <h1>Can't find what you're looking for?</h1>
+      <p>Let us know!  We would be happy to help.</p>
+    </a>
+  </li>
+  <li class="hex">
+    <a class="hexIn" href="http://www.thumble.org/resources/workshops/" target="_blank">
+      <img src="http://i1.wp.com/www.thumble.org/wp-content/uploads/2016/11/mappoint.png" alt="Thumble rover on map" />
+      <h1>Mobile Makerspace</h1>
+      <p>Workshop on the go! We can turn any space into an awesome learning environment.</p>
+    </a>
+  </li>
+  <li class="hex">
+    <a class="hexIn" href="http://www.thumble.org/resources/online/" target="_blank">
+      <img src="http://i1.wp.com/www.thumble.org/wp-content/uploads/2016/11/kids-computers-81-1437231-1599x1066.jpg" alt="Child learning from computer game" />
+      <h1>Online Resources</h1>
+      <p>We have scoured the web and compiled a list of reputable sources that provide free learning material.</p>
+    </a>
+  </li>
+  <li class="hex">
+    <a class="hexIn" href="http://www.thumble.org/resources/library/" target="_blank">
+      <img src="http://i1.wp.com/www.thumble.org/wp-content/uploads/2016/02/Makey-Makey.jpg" alt="Makey Makey kit" />
+      <h1>Lending Library</h1>
+      <p>Educators can borrow some of the latest in learning technology to use in the classroom. Browse our resources.</p>
+    </a>
+  </li>
+  <li class="hex">
+    <a class="hexIn" href="http://www.thumble.org/about-us/littlebits-global-community-chapter/" target="_blank">
+      <img src="http://i0.wp.com/www.thumble.org/wp-content/uploads/2016/03/Back-to-School-2015-Educators-2.jpg" alt="littleBits banner" />
+      <h1>Join our littleBits Community</h1>
+      <p>Thumble represents the Detroit chapter of the littleBits Global Community.  Come invent with us!</p>
+    </a>
+  </li>
+  <li class="hex">
+ <a class="hexIn" href="https://www.meetup.com/Thumble-Community/"> 
+      <img src="http://makered.org/wp-content/uploads/2014/05/slide_wallGirl_1600x650-960x905_c.jpg" alt="Maker Ed Young Makers Faire" />
+      <h1>About our Young Makers Club</h1>
+      <p> Attend our Thumble CoLab meetups and workshops with the goal of presenting something incredible at the annual Detroit Maker Faire.</p>
+    </a>  
+  </li>
+</ul>
+<button type="button" class="btn btn-lg btn-default" id="myBtn" style="background-color: #b8db7c; float: right; margin-right: 150px; margin-bottom: 50px;">Collaborate!</button>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+    <header style="background-color: #660D6B; text-align: center; color: #fff; font-size: 50px; font-weight: bold;">
+&hearts; Join the Thumble CoLab
+</header>
+<form>
+        <div class="form-group">
+        <label for="inputName">Your Name:</label>
+        <input type="password" class="form-control" id="inputName" placeholder="First Last">
+    </div>
+    <div class="form-group">
+        <label for="inputEmail1">Email address:</label>
+        <input type="email" class="form-control" id="inputEmail1" placeholder="Enter email">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputFile">Attachment</label>
+        <input type="file" id="exampleInputFile">
+    </div>
+  <div class="checkbox">
+        <label style="font-size: 18px">
+            <input type="checkbox">Add me to your mailing list
+        </label>
+    </div>
+  <button type="button" class="btn btn-lg btn-default">Submit</button>
+</form>
+  </div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
